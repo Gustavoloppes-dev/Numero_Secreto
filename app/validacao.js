@@ -39,7 +39,6 @@ function gameOver(chute) {
         `<h2 class="btn-over">GAME OVER!</h2>
         <button id="jogar-novamente" class="btn-jogar">Jogar novamente!</button>
         `
-        console.log(chute)
     }
 }
 
