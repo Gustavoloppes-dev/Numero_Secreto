@@ -1,6 +1,5 @@
 function verificaSeOChutePossuiUmValorValido(chute) {
     const numero =+chute;
-    console.log(numero)
     
     if(chuteForInvalido(numero)) {
         elementoChute.innerHTML += "<div>valor invalido</div>"
