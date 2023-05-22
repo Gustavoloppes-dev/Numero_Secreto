@@ -1,6 +1,7 @@
 function verificaSeOChutePossuiUmValorValido(chute) {
     const numero =+chute;
-
+    console.log(numero)
+    
     if(chuteForInvalido(numero)) {
         elementoChute.innerHTML += "<div>valor invalido</div>"
         return
@@ -29,6 +30,17 @@ function verificaSeOChutePossuiUmValorValido(chute) {
         `
     }
 
+}
+
+function gameOver(chute) {
+    if (typeof chute == "string" && chute ==="game over") {
+        document.body.style.background = "var(--bg-over)";
+        document.body.innerHTML = 
+        `<h2 class="btn-over">GAME OVER!</h2>
+        <button id="jogar-novamente" class="btn-jogar">Jogar novamente!</button>
+        `
+        console.log(chute)
+    }
 }
 
 function chuteForInvalido(numero) {
